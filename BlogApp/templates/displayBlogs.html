@@ -1,0 +1,10 @@
+<title>Blogs</title>
+<h1><u>Blogs</u></h1>
+<a href="/blog/create">+ Create Blog</a>
+
+{% for blog in blogs %}
+    <hr>
+    <h2>{{blog.username}}</h2>
+    <h5>{{blog.text}}</h5>
+{% endfor %}
+<hr>
